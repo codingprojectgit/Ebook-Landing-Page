@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,800|Niconne');
+
+:root {
+    --primary-color: rgba(255, 77, 0, 1);
+}
+
+.navbar-brand {
+    font-family: "Niconne", cursive;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.freelancer {
+    color: var(--primary-color);
+}
+
+.navbar ul li a {
+    font-size: 20px;
+}
+
+#hero-section {
+    position: relative;
+    background-image: url("bg-image.jpeg");
+    background-size: cover;
+    background-attachment:  fixed;
+    min-height: 650px;
+}
+
+#hero-section .dark-overlay {
+    background-color: rgba(0,0,0,0.5);
+    min-height: 650px;
+}
+
+#hero-section h1 {
+    text-transform: uppercase;
+    margin-top: 200px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#hero-section .learn_more, .subscribe .btn_subscribe {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: #fff;
+}
+
+#hero-section .learn_more:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid #fff;
+}
+
+#hero-section .download_now {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#hero-section .download_now:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.subscribe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    min-height: 20px;
+}
+
+.subscribe h2 {
+    color: #fff;
+}
+
+.subscribe input {
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+#ebook-intro h5 {
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 28px;
+}
+
+#ebook-intro i {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    padding: 5px;
+    color: #fff;
+}
+
+#cta {
+    position: relative;
+    background: url("laptop.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 550px;
+}
+
+#cta .dark-overlay {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    min-height: 550px;
+}
+
+#cta .cloud-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("cloud.png");
+    animation: animate 300s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 5440px;
+    }
+}
+
+#cta h3 {
+    margin-top: 80px;
+    color: #fff;
+}
+
+#cta h2 {
+    margin-top: 1em;
+    color: var(--primary-color);
+}
+
+#cta h4 {
+    color: #fff;
+}
+
+#cta i {
+    color: var(--primary-color);
+    font-size: 34px;
+    margin: 1em;
+}
+
+#cta a {
+    background-color: var(--primary-color);
+    margin-top: 3em;
+    padding: 1.3em 3em;
+    border-radius: 40px;
+  }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #hero-section h1 {
+        margin-top: 84px;
+        font-size: 34px;
+    }
+
+    .subscribe h2 {
+        font-size: 24px;
+    }
+
+    .subscribe .container {
+        padding: 0 54px;
+    }
+    .subscribe input {
+        margin-bottom: 8px;
+    }
+
+    #cta h3 {
+        font-size: 44px;
+    }
+    #cta h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    #cta a {
+        padding: 8px 14px;
+    }
+}
+
+
